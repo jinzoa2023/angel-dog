@@ -1,0 +1,114 @@
+/* Base Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Navigation */
+.nav-link {
+    font-weight: 600;
+    color: #0284c7;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0369a1;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: #0284c7;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.25);
+}
+
+.primary-btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #0284c7;
+    color: #0284c7;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #0284c7;
+    color: white;
+}
+
+/* Cards */
+.feature-card, .stats-card, .roadmap-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover, .stats-card:hover, .roadmap-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Social Icons */
+.social-icon {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(2, 132, 199, 0.5);
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Update the tokenomics section background */
+#tokenomics {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Update text colors for better visibility on blue background */
+.text-gray-600 {
+    color: rgba(255, 255, 255, 0.9);
+}
